@@ -1,3 +1,6 @@
+console.log("Arquivo script.js carregado corretamente");
+
+
 // Altera o texto do parágrafo com id "texto"
 document.getElementById("texto").innerText = "Texto atualizado via DOM";
 
