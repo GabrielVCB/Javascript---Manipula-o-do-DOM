@@ -1,8 +1,8 @@
 // Altera o texto do parágrafo com id "texto"
 document.getElementById("texto").innerText = "Texto atualizado via DOM";
-debugger;
+
 // Exibe a mesma mensagem no console do navegador
-console.log("Bem-vindo(a) ao nosso site!");
+alert("Bem-vindo(a) ao nosso site!");
 
 // Função para exibir uma mensagem de boas-vindas
 function exibirMensagem() {
