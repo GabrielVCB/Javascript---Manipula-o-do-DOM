@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulação do DOM e Alteração de Estilo</title>
     <style>
-        /* Estilo padrão da caixa */
         #caixa {
             width: 200px;
             height: 100px;
@@ -18,23 +17,21 @@
     </style>
 </head>
 <body>
-    <!-- Parágrafo que será alterado via DOM -->
     <p id="texto">Texto original</p>
 
-    <!-- Botões de várias funcionalidades -->
     <button onclick="exibirMensagem()">Clique para receber uma mensagem</button>
     <button onclick="mudarCorDeFundo()">Mudar Cor de Fundo</button>
     <button onclick="mostrarURL()">Mostrar URL</button>
     <button onclick="voltarPagina()">Voltar à página anterior</button>
     <button id="verificarCookies">Verificar Cookies</button>
 
-    <!-- Div para exibir a URL -->
     <div id="urlExibida"></div>
 
-    <!-- Caixa que muda de cor com onmouseover e onmouseout -->
     <div id="caixa" onmouseover="alterarCor()" onmouseout="restaurarCor()">
         Passe o mouse aqui
     </div>
+
+    <input type="text" id="campoTexto" placeholder="Digite algo..." onkeydown="detectarTecla(event)">
 
     <script src="script.js"></script>
 </body>
