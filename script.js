@@ -46,10 +46,10 @@ function restaurarCor() {
 }
 
 function detectarTecla(event) {
-    console.log("Tecla pressionada:", event.key);
+    target("Tecla pressionada:", event.key);
 
     if (!isNaN(event.key) && event.key !== "Backspace") {
         event.preventDefault();
-        console.log("Tecla bloqueada: Não é permitido digitar números.");
+        target("Tecla bloqueada: Não é permitido digitar números.");
     }
 }
