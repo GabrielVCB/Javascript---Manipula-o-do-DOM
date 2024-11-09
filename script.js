@@ -44,3 +44,13 @@ function verificarCookies() {
 
 // Adiciona evento ao botão "Verificar Cookies" usando addEventListener
 document.getElementById("verificarCookies").addEventListener("click", verificarCookies);
+
+// Função para alterar a cor de fundo da caixa ao passar o mouse
+function alterarCor() {
+    document.getElementById("caixa").style.backgroundColor = "lightblue";
+}
+
+// Função para restaurar a cor original da caixa quando o mouse sai
+function restaurarCor() {
+    document.getElementById("caixa").style.backgroundColor = "lightgray";
+}

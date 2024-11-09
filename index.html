@@ -4,28 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulação do DOM e Alteração de Estilo</title>
+    <style>
+        /* Estilo padrão da caixa */
+        #caixa {
+            width: 200px;
+            height: 100px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 100px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <!-- Parágrafo que será alterado via DOM -->
     <p id="texto">Texto original</p>
 
-    <!-- Botão para exibir mensagem de boas-vindas -->
+    <!-- Botões de várias funcionalidades -->
     <button onclick="exibirMensagem()">Clique para receber uma mensagem</button>
-
-    <!-- Botão para alternar a cor de fundo da página -->
     <button onclick="mudarCorDeFundo()">Mudar Cor de Fundo</button>
-
-    <!-- Botão para mostrar a URL -->
     <button onclick="mostrarURL()">Mostrar URL</button>
+    <button onclick="voltarPagina()">Voltar à página anterior</button>
+    <button id="verificarCookies">Verificar Cookies</button>
 
     <!-- Div para exibir a URL -->
     <div id="urlExibida"></div>
 
-    <!-- Botão para voltar à página anterior -->
-    <button onclick="voltarPagina()">Voltar à página anterior</button>
-
-    <!-- Botão para verificar se os cookies estão habilitados -->
-    <button id="verificarCookies">Verificar Cookies</button>
+    <!-- Caixa que muda de cor com onmouseover e onmouseout -->
+    <div id="caixa" onmouseover="alterarCor()" onmouseout="restaurarCor()">
+        Passe o mouse aqui
+    </div>
 
     <script src="script.js"></script>
 </body>
