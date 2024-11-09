@@ -20,9 +20,17 @@ function mudarCorDeFundo() {
 
 // Função para mostrar a URL atual
 function mostrarURL() {
-    // Obtém a URL atual usando a propriedade location.href
     const urlAtual = window.location.href;
-
-    // Cria ou atualiza o conteúdo do div com id "urlExibida"
     document.getElementById("urlExibida").innerText = "URL Atual: " + urlAtual;
+}
+
+// Função para voltar à página anterior
+function voltarPagina() {
+    if (window.history.length > 1) {
+        // Se houver histórico, volta à página anterior
+        window.history.back();
+    } else {
+        // Caso não haja histórico, exibe uma mensagem
+        window.alert("Não há uma página anterior no histórico.");
+    }
 }
