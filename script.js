@@ -27,10 +27,20 @@ function mostrarURL() {
 // Função para voltar à página anterior
 function voltarPagina() {
     if (window.history.length > 1) {
-        // Se houver histórico, volta à página anterior
         window.history.back();
     } else {
-        // Caso não haja histórico, exibe uma mensagem
         window.alert("Não há uma página anterior no histórico.");
     }
 }
+
+// Função para verificar se os cookies estão habilitados
+function verificarCookies() {
+    if (navigator.cookieEnabled) {
+        window.alert("Cookies estão habilitados.");
+    } else {
+        window.alert("Cookies estão desabilitados.");
+    }
+}
+
+// Adiciona evento ao botão "Verificar Cookies" usando addEventListener
+document.getElementById("verificarCookies").addEventListener("click", verificarCookies);
